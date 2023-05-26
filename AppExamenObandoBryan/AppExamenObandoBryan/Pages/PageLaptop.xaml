@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamenObandoBryan.Pages.PageLaptop">
+    <ContentPage.Content>
+        <StackLayout Margin="20,20,20,20">
+            <Frame BackgroundColor="Black" Padding="15" CornerRadius="10">
+                <Label Text="Bienvenido a la app de registro de Laptops!" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+
+            <Label></Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Entry Placeholder="Id" x:Name="txtId" FontSize="15" Grid.Column="0" ></Entry>
+                <Entry Placeholder="Modelo" x:Name="txtModelo" FontSize="15" Grid.Column="1"></Entry>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Entry Placeholder="Serie" x:Name="txtSerie" FontSize="15" Grid.Column="0"></Entry>
+                <Entry Placeholder="Memoria RAM" x:Name="txtRam" FontSize="15" Grid.Column="1"></Entry>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Entry Placeholder="Almacenamiento" x:Name="txtAlmacenamiento" FontSize="15" Grid.Column="0"></Entry>
+                <Entry Placeholder="Pantalla" x:Name="txtPantalla" FontSize="15" Grid.Column="1"></Entry>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Picker Title="-- Seleccione un procesador --" Grid.Column="0" FontSize="15" x:Name="pickPro">
+                </Picker>
+                <Button Text="Crear" Clicked="Button_Procesador" Grid.Column="1" FontSize="15" TextTransform="None"></Button>
+            </Grid>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Picker Title="-- Seleccione una tarjeta gráfica --" Grid.Column="0" FontSize="15" x:Name="pickGra" >
+                </Picker>
+                <Button Text="Crear" Clicked="Button_Grafica" Grid.Column="1" FontSize="15" TextTransform="None"></Button>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Picker Title="-- Seleccione una marca --" Grid.Column="0" FontSize="15" x:Name="pickMar">
+                </Picker>
+                <Button Text="Crear" Clicked="Button_Marca" Grid.Column="1" FontSize="15" TextTransform="None"></Button>
+            </Grid>
+
+            <Label></Label>
+
+            <Button Text="Ver Laptops" Clicked="Button_VerLaptops" TextTransform="None"></Button>
+
+            <Label></Label>
+
+            <Button Text="Cargar Datos" Clicked="Button_Clicked" TextTransform="None"></Button>
+            <Button Text="Ingresar Laptop" Clicked="Button_Clicked1" TextTransform="None"></Button>
+            <Button Text="Actualizar Laptop" Clicked="Button_Clicked2" TextTransform="None"></Button>
+            <Button Text="Borrar Laptop" Clicked="Button_Clicked3" TextTransform="None"></Button>
+                
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

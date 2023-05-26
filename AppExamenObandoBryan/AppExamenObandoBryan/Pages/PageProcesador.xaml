@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamenObandoBryan.Pages.PageProcesador">
+    <ContentPage.Content>
+        <StackLayout Margin="20,20,20,20">
+            <Frame BackgroundColor="Black" Padding="15" CornerRadius="10">
+                <Label Text="Registro de Procesadores!" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+
+            <Label></Label>
+
+            <Grid x:Name="GridProcesadores">
+            </Grid>
+
+            <Label></Label>
+
+            <Entry Placeholder="Id" x:Name="txtId" FontSize="15" ></Entry>
+            <Entry Placeholder="Marca" x:Name="txtMarca" FontSize="15"></Entry>
+            <Entry Placeholder="Modelo" x:Name="txtModelo" FontSize="15"></Entry>
+
+            <Button Text="Regresar" Clicked="Button_Clicked" TextTransform="None"></Button>
+            <Label></Label>
+
+            <Button Text="Cargar Datos" Clicked="Button_Clicked1" TextTransform="None"></Button>
+            <Button Text="Ingresar Procesador" Clicked="Button_Clicked2" TextTransform="None"></Button>
+            <Button Text="Actualizar Procesador" Clicked="Button_Clicked3" TextTransform="None"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
